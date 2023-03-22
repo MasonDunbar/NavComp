@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homePage">
+
+    <fragment
+        android:id="@+id/homePage"
+        android:name="com.example.navcomp.HomePage"
+        android:label="fragment_home_page"
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePage_to_studyPage"
+            app:destination="@id/studyPage" />
+        <action
+            android:id="@+id/action_homePage_to_vocabConfusionPage"
+            app:destination="@id/vocabConfusionPage" />
+        <action
+            android:id="@+id/action_homePage_to_bubbleMatchPage"
+            app:destination="@id/bubbleMatchPage" />
+        <action
+            android:id="@+id/action_homePage_to_magicTroublePage"
+            app:destination="@id/magicTroublePage" />
+        <action
+            android:id="@+id/action_homePage_to_kanaChallengePage"
+            app:destination="@id/kanaChallengePage" />
+        <action
+            android:id="@+id/action_homePage_to_informationPage"
+            app:destination="@id/informationPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/studyPage"
+        android:name="com.example.navcomp.StudyPage"
+        android:label="fragment_study__page"
+        tools:layout="@layout/fragment_study_page" />
+    <fragment
+        android:id="@+id/bubbleMatchPage"
+        android:name="com.example.navcomp.BubbleMatchPage"
+        android:label="fragment_bubble_match_page"
+        tools:layout="@layout/fragment_bubble_match_page" />
+    <fragment
+        android:id="@+id/informationPage"
+        android:name="com.example.navcomp.InformationPage"
+        android:label="fragment_information_page"
+        tools:layout="@layout/fragment_information_page" />
+    <fragment
+        android:id="@+id/kanaChallengePage"
+        android:name="com.example.navcomp.KanaChallengePage"
+        android:label="fragment_kana_challenge_page"
+        tools:layout="@layout/fragment_kana_challenge_page" />
+    <fragment
+        android:id="@+id/magicTroublePage"
+        android:name="com.example.navcomp.MagicTroublePage"
+        android:label="fragment_magic_trouble_page"
+        tools:layout="@layout/fragment_magic_trouble_page" />
+    <fragment
+        android:id="@+id/vocabConfusionPage"
+        android:name="com.example.navcomp.VocabConfusionPage"
+        android:label="fragment_vocab_confusion_page"
+        tools:layout="@layout/fragment_vocab_confusion_page" />
+</navigation>
