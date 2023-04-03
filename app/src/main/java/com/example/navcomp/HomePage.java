@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -19,20 +20,32 @@ public class HomePage extends Fragment {
         // Required empty public constructor
     }
 
+    //Declare the buttons
+    ImageButton study;
+    ImageButton vocab;
+    ImageButton magic;
+    ImageButton bubble;
+    ImageButton kana;
+    ImageButton info;
+
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_home_page, container, false);
 
-        Button study = view.findViewById(R.id.study);
+        ImageButton study = view.findViewById(R.id.study);
         study.setOnClickListener(new View.OnClickListener() {
+
+            //study.setBackgroundDrawable(R.drawable.)
             @Override
             public void onClick(View view) {
                 Navigation.findNavController(view).navigate(R.id.action_homePage_to_studyPage);
             }
         });
 
-        Button vocab = view.findViewById(R.id.vocab);
+        ImageButton vocab = view.findViewById(R.id.vocab);
         vocab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -40,7 +53,7 @@ public class HomePage extends Fragment {
             }
         });
 
-        Button magic = view.findViewById(R.id.magic);
+        ImageButton magic = view.findViewById(R.id.magic);
         magic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -48,7 +61,7 @@ public class HomePage extends Fragment {
             }
         });
 
-        Button bubble = view.findViewById(R.id.bubble);
+        ImageButton bubble = view.findViewById(R.id.bubble);
         bubble.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,7 +70,7 @@ public class HomePage extends Fragment {
         });
 
 
-        Button kana = view.findViewById(R.id.kana);
+        ImageButton kana = view.findViewById(R.id.kana);
         kana.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,7 +78,7 @@ public class HomePage extends Fragment {
             }
         });
 
-        Button info = view.findViewById(R.id.info);
+        ImageButton info = view.findViewById(R.id.info);
         info.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

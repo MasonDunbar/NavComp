@@ -33,12 +33,59 @@
         android:id="@+id/studyPage"
         android:name="com.example.navcomp.StudyPage"
         android:label="fragment_study__page"
-        tools:layout="@layout/fragment_study_page" />
+        tools:layout="@layout/fragment_study_page" >
+        <action
+            android:id="@+id/action_studyPage_to_studyPageAdjectives"
+            app:destination="@id/studyPageAdjectives" />
+        <action
+            android:id="@+id/action_studyPage_to_studyPageGeneral"
+            app:destination="@id/studyPageGeneral" />
+        <action
+            android:id="@+id/action_studyPage_to_studyPageSchool"
+            app:destination="@id/studyPageSchool" />
+        <action
+            android:id="@+id/action_studyPage_to_studyPageColours"
+            app:destination="@id/studyPageColours" />
+        <action
+            android:id="@+id/action_studyPage_to_studyPageNumbers"
+            app:destination="@id/studyPageNumbers" />
+        <action
+            android:id="@+id/action_studyPage_to_studyPageEssential"
+            app:destination="@id/studyPageEssential" />
+        <action
+            android:id="@+id/action_studyPage_to_studyPageVerbs"
+            app:destination="@id/studyPageVerbs" />
+        <action
+            android:id="@+id/action_studyPage_to_studyPageGreetings"
+            app:destination="@id/studyPageGreetings" />
+        <action
+            android:id="@+id/action_studyPage_to_studyPageAnimals"
+            app:destination="@id/studyPageAnimals" />
+        <action
+            android:id="@+id/action_studyPage_to_studyPageBodyParts"
+            app:destination="@id/studyPageBodyParts" />
+        <action
+            android:id="@+id/action_studyPage_to_studyPageTime"
+            app:destination="@id/studyPageTime" />
+        <action
+            android:id="@+id/action_studyPage_to_studyPageCounting"
+            app:destination="@id/studyPageCounting" />
+    </fragment>
     <fragment
         android:id="@+id/bubbleMatchPage"
         android:name="com.example.navcomp.BubbleMatchPage"
         android:label="fragment_bubble_match_page"
-        tools:layout="@layout/fragment_bubble_match_page" />
+        tools:layout="@layout/fragment_bubble_match_page" >
+        <action
+            android:id="@+id/action_bubbleMatchPage_to_bubbleMatchGamePageK"
+            app:destination="@id/bubbleMatchGamePageK" />
+        <action
+            android:id="@+id/action_bubbleMatchPage_to_bubbleMatchGamePageR"
+            app:destination="@id/bubbleMatchGamePageR" />
+        <action
+            android:id="@+id/action_bubbleMatchPage_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
     <fragment
         android:id="@+id/informationPage"
         android:name="com.example.navcomp.InformationPage"
@@ -59,4 +106,74 @@
         android:name="com.example.navcomp.VocabConfusionPage"
         android:label="fragment_vocab_confusion_page"
         tools:layout="@layout/fragment_vocab_confusion_page" />
+    <fragment
+        android:id="@+id/bubbleMatchGamePageK"
+        android:name="com.example.navcomp.BubbleMatchGamePageK"
+        android:label="fragment_bubble_match_game_page_k"
+        tools:layout="@layout/fragment_bubble_match_game_page_k" />
+    <fragment
+        android:id="@+id/bubbleMatchGamePageR"
+        android:name="com.example.navcomp.BubbleMatchGamePageR"
+        android:label="fragment_bubble_match_game_page_r"
+        tools:layout="@layout/fragment_bubble_match_game_page_r" />
+    <fragment
+        android:id="@+id/studyPageAdjectives"
+        android:name="com.example.navcomp.StudyPageAdjectives"
+        android:label="fragment_study_page_adjectives"
+        tools:layout="@layout/fragment_study_page_adjectives" />
+    <fragment
+        android:id="@+id/studyPageAnimals"
+        android:name="com.example.navcomp.StudyPageAnimals"
+        android:label="fragment_study_page_animals"
+        tools:layout="@layout/fragment_study_page_animals" />
+    <fragment
+        android:id="@+id/studyPageColours"
+        android:name="com.example.navcomp.StudyPageColours"
+        android:label="fragment_study_page_colours"
+        tools:layout="@layout/fragment_study_page_colours" />
+    <fragment
+        android:id="@+id/studyPageCounting"
+        android:name="com.example.navcomp.StudyPageCounting"
+        android:label="fragment_study_page_counting"
+        tools:layout="@layout/fragment_study_page_counting" />
+    <fragment
+        android:id="@+id/studyPageBodyParts"
+        android:name="com.example.navcomp.StudyPageBodyParts"
+        android:label="fragment_study_page_body_parts"
+        tools:layout="@layout/fragment_study_page_body_parts" />
+    <fragment
+        android:id="@+id/studyPageEssential"
+        android:name="com.example.navcomp.StudyPageEssential"
+        android:label="fragment_study_page_essential"
+        tools:layout="@layout/fragment_study_page_essential" />
+    <fragment
+        android:id="@+id/studyPageGeneral"
+        android:name="com.example.navcomp.StudyPageGeneral"
+        android:label="fragment_study_page_general"
+        tools:layout="@layout/fragment_study_page_general" />
+    <fragment
+        android:id="@+id/studyPageGreetings"
+        android:name="com.example.navcomp.StudyPageGreetings"
+        android:label="fragment_study_page_greetings"
+        tools:layout="@layout/fragment_study_page_greetings" />
+    <fragment
+        android:id="@+id/studyPageNumbers"
+        android:name="com.example.navcomp.StudyPageNumbers"
+        android:label="fragment_study_page_numbers"
+        tools:layout="@layout/fragment_study_page_numbers" />
+    <fragment
+        android:id="@+id/studyPageSchool"
+        android:name="com.example.navcomp.StudyPageSchool"
+        android:label="fragment_study_page_school"
+        tools:layout="@layout/fragment_study_page_school" />
+    <fragment
+        android:id="@+id/studyPageTime"
+        android:name="com.example.navcomp.StudyPageTime"
+        android:label="fragment_study_page_time"
+        tools:layout="@layout/fragment_study_page_time" />
+    <fragment
+        android:id="@+id/studyPageVerbs"
+        android:name="com.example.navcomp.StudyPageVerbs"
+        android:label="fragment_study_page_verbs"
+        tools:layout="@layout/fragment_study_page_verbs" />
 </navigation>

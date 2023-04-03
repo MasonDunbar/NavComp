@@ -1,13 +1,128 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/study_background"
     tools:context=".StudyPage">
 
-    <TextView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Study App"/>
+    <Button
+        android:id="@+id/StudyInformation"
+        android:text="Information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/back"
+        android:text="back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-</FrameLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="160dp"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TableRow>
+            <Button
+                android:id="@+id/StudyGreetings"
+                android:text="Greetings"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/StudyEssential"
+                android:text="Essential"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/StudyNumbers"
+                android:text="Numbers"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/StudyColours"
+                android:text="Colours"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/StudySchool"
+                android:text="School"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/StudyGeneral"
+                android:text="General"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/StudyAdjectives"
+                android:text="Adjectives"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/StudyVerbs"
+                android:text="Verbs"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/StudyAnimals"
+                android:text="Animals"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/StudyBodyParts"
+                android:text="Body Parts"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/StudyDaysWeeksMonthsYears"
+                android:text="Days, Weeks, Months, Years"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/StudyFamilyandCounting"
+                android:text="Family and Counting"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+        </TableRow>
+        <TableRow>
+            <Button
+                android:id="@+id/StudyFoodandDrink"
+                android:text="Food and Drink"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+            <Button
+                android:id="@+id/StudySeasonsandWeather"
+                android:text="Seasons and Weather"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_margin="5dp"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
