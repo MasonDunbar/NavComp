@@ -11,93 +11,82 @@
     android:theme="@android:style/Theme.Black.NoTitleBar"
     tools:context=".HomePage">
 
+
     <ImageButton
         android:id="@+id/study"
+        android:background="@drawable/main_menu_study_button"
+        android:contentDescription="Study button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/main_menu_study_button"
-        android:contentDescription="Studybutton"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/vocab"
-        app:layout_constraintDimensionRatio="1:0.25"
-        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintDimensionRatio="1:0.2"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
-        app:layout_constraintTop_toTopOf="@+id/guidelineTop"
-        tools:ignore="HardcodedText" />
+        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        tools:ignore="HardcodedText"/>
 
     <ImageButton
         android:id="@+id/vocab"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
         android:background="@drawable/main_menu_vocab_button"
         android:contentDescription="Vocab Confusion button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/magic"
-        app:layout_constraintDimensionRatio="1:0.25"
+        app:layout_constraintDimensionRatio="1:0.2"
         app:layout_constraintEnd_toEndOf="@id/guidelineRight"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/study"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"/>
 
     <ImageButton
         android:id="@+id/magic"
+        android:background="@drawable/main_menu_magic_button"
+        android:contentDescription="Magic Trouble button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/main_menu_magic_button"
-        android:contentDescription="MagicTroublebutton"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/bubble"
-        app:layout_constraintDimensionRatio="1:0.25"
+        app:layout_constraintDimensionRatio="1:0.2"
         app:layout_constraintEnd_toEndOf="@id/guidelineRight"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/vocab"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"/>
 
     <ImageButton
         android:id="@+id/bubble"
+        android:background="@drawable/main_menu_bubble_button"
+        android:contentDescription="Bubble Match button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/main_menu_bubble_button"
-        android:contentDescription="BubbleMatchbutton"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/kana"
-        app:layout_constraintDimensionRatio="1:0.25"
+        app:layout_constraintDimensionRatio="1:0.2"
         app:layout_constraintEnd_toEndOf="@id/guidelineRight"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/magic"
         tools:ignore="HardcodedText" />
 
     <ImageButton
         android:id="@+id/kana"
+        android:background="@drawable/main_menu_kana_button"
+        android:contentDescription="Kana Challenge button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/main_menu_kana_button"
-        android:contentDescription="KanaChallengebutton"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toTopOf="@+id/info"
-        app:layout_constraintDimensionRatio="1:0.25"
+        app:layout_constraintDimensionRatio="1:0.2"
         app:layout_constraintEnd_toEndOf="@id/guidelineRight"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/guidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/bubble"
         tools:ignore="HardcodedText" />
 
     <ImageButton
         android:id="@+id/info"
+        android:background="@drawable/main_menu_info_button"
+        android:contentDescription="button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/main_menu_info_button"
-        android:contentDescription="maininfobutton"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintDimensionRatio="1:0.5"
-        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintDimensionRatio="1:0.3"
+        app:layout_constraintEnd_toEndOf="@id/guidelineSmallRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineSmallLeft"
         app:layout_constraintTop_toBottomOf="@+id/kana"
         tools:ignore="HardcodedText" />
 
@@ -113,13 +102,27 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.05" />
+        app:layout_constraintGuide_percent="0.1" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guidelineRight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.95" />
+        app:layout_constraintGuide_percent="0.9" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSmallLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSmallRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

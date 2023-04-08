@@ -19,13 +19,16 @@ public class BubbleMatchPage extends Fragment {
     public BubbleMatchPage() {
         // Required empty public constructor
     }
+    ImageButton bubble_kana;
+    ImageButton bubble_romaji;
+    Button bubble_back;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_bubble_match_page, container, false);
 
-        Button bubbleback = view.findViewById(R.id.bubbleback);
+        Button bubbleback = view.findViewById(R.id.bubble_back);
         bubbleback.setOnClickListener(new View.OnClickListener() {
 
             //study.setBackgroundDrawable(R.drawable.)
@@ -35,7 +38,7 @@ public class BubbleMatchPage extends Fragment {
             }
         });
 
-        Button bubbleromaji = view.findViewById(R.id.bubbleromaji);
+        ImageButton bubbleromaji = view.findViewById(R.id.bubble_romaji);
         bubbleromaji.setOnClickListener(new View.OnClickListener() {
 
             //study.setBackgroundDrawable(R.drawable.)
@@ -45,7 +48,7 @@ public class BubbleMatchPage extends Fragment {
             }
         });
 
-        Button bubblekana = view.findViewById(R.id.bubblekana);
+        ImageButton bubblekana = view.findViewById(R.id.bubble_kana);
         bubblekana.setOnClickListener(new View.OnClickListener() {
 
             //study.setBackgroundDrawable(R.drawable.)
