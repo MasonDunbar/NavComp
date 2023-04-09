@@ -61,7 +61,7 @@ public class HomePage extends Fragment {
         bubble.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Navigation.findNavController(view).navigate(R.id.action_homePage_to_bubbleMatchPage);
+                Navigation.findNavController(view).navigate(R.id.action_homePage_to_bubbleMatchTypePage);
             }
         });
 
@@ -73,9 +73,6 @@ public class HomePage extends Fragment {
                 Navigation.findNavController(view).navigate(R.id.action_homePage_to_kanaChallengePage);
             }
         });
-
-
-
 
 
         ImageButton info = view.findViewById(R.id.info);

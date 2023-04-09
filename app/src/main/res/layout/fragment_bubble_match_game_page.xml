@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bubble_game_screen_background_phone"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@android:style/Theme.Black.NoTitleBar"
+    tools:context=".BubbleMatchGamePage">
+
+    <TextView
+        android:id="@+id/bubblescore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="score"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="30dp" />
+
+    <TextView
+        android:id="@+id/bubbletime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="time"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="280dp"
+        tools:layout_editor_absoluteY="39dp" />
+
+
+    <ImageButton
+        android:id="@+id/bgb1_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bubble_game_adjectives_english_bad"
+        android:contentDescription="bubblebackbutton"
+        android:scaleType="centerCrop"
+
+        app:layout_constraintDimensionRatio="1:0"
+        app:layout_constraintBottom_toTopOf="@+id/bgb1_2"
+        app:layout_constraintLeft_toLeftOf="@id/bubbleGuidelineLeft"
+        app:layout_constraintRight_toRightOf="@id/bubbleGuidelinemiddleleft"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleGuidelineTop2" />
+
+    <ImageButton
+        android:id="@+id/bgb1_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bubble_game_adjectives_english_beautiful"
+        android:contentDescription="bubblebackbutton"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:0"
+        app:layout_constraintBottom_toTopOf="@+id/bgb1_3"
+        app:layout_constraintTop_toBottomOf="@+id/bgb1_1"
+        app:layout_constraintLeft_toLeftOf="@id/bubbleGuidelineLeft"
+        app:layout_constraintRight_toRightOf="@id/bubbleGuidelinemiddleleft" />
+
+    <ImageButton
+        android:id="@+id/bgb1_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bubble_game_adjectives_english_cheap_inexpensive"
+        android:contentDescription="bubblebackbutton"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:0"
+        app:layout_constraintBottom_toTopOf="@+id/bgb1_4"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelinemiddleleft"
+        app:layout_constraintStart_toStartOf="@+id/bubbleGuidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/bgb1_2" />
+
+    <ImageButton
+        android:id="@+id/bgb1_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bubble_game_adjectives_english_boring"
+        android:contentDescription="bubblebackbutton"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:0"
+        app:layout_constraintBottom_toTopOf="@+id/bgb1_5"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelinemiddleleft"
+        app:layout_constraintStart_toStartOf="@+id/bubbleGuidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/bgb1_3" />
+
+    <ImageButton
+        android:id="@+id/bgb1_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bubble_game_adjectives_english_cold"
+        android:contentDescription="bubblebackbutton"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:0"
+        app:layout_constraintBottom_toTopOf="@+id/bgb1_6"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelinemiddleleft"
+        app:layout_constraintStart_toStartOf="@+id/bubbleGuidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/bgb1_4" />
+
+    <ImageButton
+        android:id="@+id/bgb1_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bubble_game_adjectives_english_convenient"
+        android:contentDescription="bubblebackbutton"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:0"
+        app:layout_constraintBottom_toTopOf="@+id/bubbleGuidelineBottom"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelinemiddleleft"
+        app:layout_constraintStart_toStartOf="@+id/bubbleGuidelineLeft"
+        app:layout_constraintTop_toBottomOf="@+id/bgb1_5" />
+
+    <ImageButton
+        android:id="@+id/bgb2_1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bubble_game_adjectives_english_bad"
+        android:contentDescription="bubblebackbutton"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:0"
+        app:layout_constraintBottom_toTopOf="@+id/bgb2_2"
+        app:layout_constraintLeft_toLeftOf="@id/bubbleGuidelinemiddleright"
+        app:layout_constraintRight_toRightOf="@id/bubbleGuidelineright"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleGuidelineTop2" />
+
+    <ImageButton
+        android:id="@+id/bgb2_2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bubble_game_adjectives_english_beautiful"
+        android:contentDescription="bubblebackbutton"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:0"
+        app:layout_constraintBottom_toTopOf="@+id/bgb2_3"
+        app:layout_constraintTop_toBottomOf="@+id/bgb2_1"
+        app:layout_constraintLeft_toLeftOf="@id/bubbleGuidelinemiddleright"
+        app:layout_constraintRight_toRightOf="@id/bubbleGuidelineright" />
+
+    <ImageButton
+        android:id="@+id/bgb2_3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bubble_game_adjectives_english_cheap_inexpensive"
+        android:contentDescription="bubblebackbutton"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:0"
+        app:layout_constraintBottom_toTopOf="@+id/bgb2_4"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelineright"
+        app:layout_constraintStart_toStartOf="@+id/bubbleGuidelinemiddleright"
+        app:layout_constraintTop_toBottomOf="@+id/bgb2_2" />
+
+    <ImageButton
+        android:id="@+id/bgb2_4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bubble_game_adjectives_english_boring"
+        android:contentDescription="bubblebackbutton"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:0"
+        app:layout_constraintBottom_toTopOf="@+id/bgb2_5"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelineright"
+        app:layout_constraintStart_toStartOf="@+id/bubbleGuidelinemiddleright"
+        app:layout_constraintTop_toBottomOf="@+id/bgb2_3" />
+
+    <ImageButton
+        android:id="@+id/bgb2_5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bubble_game_adjectives_english_cold"
+        android:contentDescription="bubblebackbutton"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:0"
+        app:layout_constraintBottom_toTopOf="@+id/bgb2_6"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelineright"
+        app:layout_constraintStart_toStartOf="@+id/bubbleGuidelinemiddleright"
+        app:layout_constraintTop_toBottomOf="@+id/bgb2_4" />
+
+    <ImageButton
+        android:id="@+id/bgb2_6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/bubble_game_adjectives_english_convenient"
+        android:contentDescription="bubblebackbutton"
+        android:scaleType="centerCrop"
+        app:layout_constraintDimensionRatio="1:0"
+        app:layout_constraintBottom_toTopOf="@+id/bubbleGuidelineBottom"
+        app:layout_constraintEnd_toStartOf="@+id/bubbleGuidelineright"
+        app:layout_constraintStart_toStartOf="@+id/bubbleGuidelinemiddleright"
+        app:layout_constraintTop_toBottomOf="@+id/bgb2_5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelineTop1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.02" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelineTop2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.10" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelinemiddleleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.48" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelinemiddleright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.52" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelineright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/bubbleGuidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.86" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

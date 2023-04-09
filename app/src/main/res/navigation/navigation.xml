@@ -17,9 +17,6 @@
             android:id="@+id/action_homePage_to_vocabConfusionPage"
             app:destination="@id/vocabConfusionPage" />
         <action
-            android:id="@+id/action_homePage_to_bubbleMatchPage"
-            app:destination="@id/bubbleMatchPage" />
-        <action
             android:id="@+id/action_homePage_to_magicTroublePage"
             app:destination="@id/magicTroublePage" />
         <action
@@ -28,6 +25,9 @@
         <action
             android:id="@+id/action_homePage_to_informationPage"
             app:destination="@id/informationPage" />
+        <action
+            android:id="@+id/action_homePage_to_bubbleMatchTypePage"
+            app:destination="@id/bubbleMatchTypePage" />
     </fragment>
     <fragment
         android:id="@+id/studyPage"
@@ -72,21 +72,6 @@
             app:destination="@id/studyPageCounting" />
     </fragment>
     <fragment
-        android:id="@+id/bubbleMatchPage"
-        android:name="com.example.navcomp.BubbleMatchPage"
-        android:label="fragment_bubble_match_page"
-        tools:layout="@layout/fragment_bubble_match_page" >
-        <action
-            android:id="@+id/action_bubbleMatchPage_to_bubbleMatchGamePageK"
-            app:destination="@id/bubbleMatchGamePageK" />
-        <action
-            android:id="@+id/action_bubbleMatchPage_to_bubbleMatchGamePageR"
-            app:destination="@id/bubbleMatchGamePageR" />
-        <action
-            android:id="@+id/action_bubbleMatchPage_to_homePage"
-            app:destination="@id/homePage" />
-    </fragment>
-    <fragment
         android:id="@+id/informationPage"
         android:name="com.example.navcomp.InformationPage"
         android:label="fragment_information_page"
@@ -106,16 +91,6 @@
         android:name="com.example.navcomp.VocabConfusionPage"
         android:label="fragment_vocab_confusion_page"
         tools:layout="@layout/fragment_vocab_confusion_page" />
-    <fragment
-        android:id="@+id/bubbleMatchGamePageK"
-        android:name="com.example.navcomp.BubbleMatchGamePageK"
-        android:label="fragment_bubble_match_game_page_k"
-        tools:layout="@layout/fragment_bubble_match_game_page_k" />
-    <fragment
-        android:id="@+id/bubbleMatchGamePageR"
-        android:name="com.example.navcomp.BubbleMatchGamePageR"
-        android:label="fragment_bubble_match_game_page_r"
-        tools:layout="@layout/fragment_bubble_match_game_page_r" />
     <fragment
         android:id="@+id/studyPageAdjectives"
         android:name="com.example.navcomp.StudyPageAdjectives"
@@ -176,4 +151,52 @@
         android:name="com.example.navcomp.StudyPageVerbs"
         android:label="fragment_study_page_verbs"
         tools:layout="@layout/fragment_study_page_verbs" />
+    <fragment
+        android:id="@+id/bubbleMatchTypePage"
+        android:name="com.example.navcomp.BubbleMatchTypePage"
+        android:label="fragment_bubble_match_type_page"
+        tools:layout="@layout/fragment_bubble_match_type_page" >
+        <action
+            android:id="@+id/action_bubbleMatchTypePage_to_homePage"
+            app:destination="@id/homePage" />
+        <action
+            android:id="@+id/action_bubbleMatchTypePage_to_bubbleMatchSelectionPage"
+            app:destination="@id/bubbleMatchSelectionPage" />
+        <action
+            android:id="@+id/action_bubbleMatchTypePage_to_bubbleMatchGamePage2"
+            app:destination="@id/bubbleMatchGamePage2" />
+    </fragment>
+    <fragment
+        android:id="@+id/bubbleMatchSelectionPage"
+        android:name="com.example.navcomp.BubbleMatchSelectionPage"
+        android:label="fragment_bubble_match_selection_page"
+        tools:layout="@layout/fragment_bubble_match_selection_page" >
+        <action
+            android:id="@+id/action_bubbleMatchSelectionPage_to_bubbleMatchGamePage2"
+            app:destination="@id/bubbleMatchGamePage2" />
+        <action
+            android:id="@+id/action_bubbleMatchSelectionPage_to_bubbleMatchTypePage"
+            app:destination="@id/bubbleMatchTypePage" />
+    </fragment>
+    <fragment
+        android:id="@+id/bubbleMatchGamePage2"
+        android:name="com.example.navcomp.BubbleMatchGamePage"
+        android:label="fragment_bubble_match_game_page"
+        tools:layout="@layout/fragment_bubble_match_game_page" >
+        <action
+            android:id="@+id/action_bubbleMatchGamePage2_to_bubbleMatchEndPage"
+            app:destination="@id/bubbleMatchEndPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/bubbleMatchEndPage"
+        android:name="com.example.navcomp.BubbleMatchEndPage"
+        android:label="fragment_bubble_match_end_page"
+        tools:layout="@layout/fragment_bubble_match_end_page" >
+        <action
+            android:id="@+id/action_bubbleMatchEndPage_to_homePage"
+            app:destination="@id/homePage" />
+        <action
+            android:id="@+id/action_bubbleMatchEndPage_to_bubbleMatchTypePage"
+            app:destination="@id/bubbleMatchTypePage" />
+    </fragment>
 </navigation>

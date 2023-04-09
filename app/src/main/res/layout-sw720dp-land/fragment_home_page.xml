@@ -2,29 +2,27 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/main_menu_background"
+    android:background="@drawable/main_menu_background_computer"
     android:gravity="center"
     android:orientation="vertical"
     android:theme="@android:style/Theme.Black.NoTitleBar"
     tools:context=".HomePage">
 
-
     <ImageButton
         android:id="@+id/study"
+        android:background="@drawable/main_menu_study_button"
+        android:contentDescription="Studybutton"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@drawable/main_menu_study_button"
-        android:contentDescription="Study button"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/vocab"
         app:layout_constraintDimensionRatio="1:0.25"
-        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintEnd_toEndOf="@id/menuGuidelineRight"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
-        app:layout_constraintTop_toTopOf="@+id/guidelineTop"
+        app:layout_constraintStart_toStartOf="@id/menuGuidelineLeft"
+        app:layout_constraintTop_toTopOf="@+id/menuGuidelineTop"
         tools:ignore="HardcodedText" />
 
     <ImageButton
@@ -36,9 +34,9 @@
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/magic"
         app:layout_constraintDimensionRatio="1:0.25"
-        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintEnd_toEndOf="@id/menuGuidelineRight"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintStart_toStartOf="@id/menuGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/study"
         tools:ignore="HardcodedText" />
 
@@ -47,13 +45,13 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/main_menu_magic_button"
-        android:contentDescription="Magic Trouble button"
+        android:contentDescription="MagicTroublebutton"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/bubble"
         app:layout_constraintDimensionRatio="1:0.25"
-        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintEnd_toEndOf="@id/menuGuidelineRight"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintStart_toStartOf="@id/menuGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/vocab"
         tools:ignore="HardcodedText" />
 
@@ -62,13 +60,13 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/main_menu_bubble_button"
-        android:contentDescription="Bubble Match button"
+        android:contentDescription="BubbleMatchbutton"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/kana"
         app:layout_constraintDimensionRatio="1:0.25"
-        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintEnd_toEndOf="@id/menuGuidelineRight"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintStart_toStartOf="@id/menuGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/magic"
         tools:ignore="HardcodedText" />
 
@@ -77,13 +75,13 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/main_menu_kana_button"
-        android:contentDescription="Kana Challenge button"
+        android:contentDescription="KanaChallengebutton"
         android:scaleType="centerCrop"
         app:layout_constraintBottom_toTopOf="@+id/info"
         app:layout_constraintDimensionRatio="1:0.25"
-        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
+        app:layout_constraintEnd_toEndOf="@id/menuGuidelineRight"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintStart_toStartOf="@id/menuGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/bubble"
         tools:ignore="HardcodedText" />
 
@@ -92,32 +90,38 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@drawable/main_menu_info_button"
-        android:contentDescription="button"
+        android:contentDescription="maininfobutton"
         android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/menuGuidelineBottom"
         app:layout_constraintDimensionRatio="1:0.5"
-        app:layout_constraintEnd_toEndOf="@id/guidelineRight"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toEndOf="@id/menuGuidelineRight"
+        app:layout_constraintStart_toStartOf="@id/menuGuidelineLeft"
         app:layout_constraintTop_toBottomOf="@+id/kana"
         tools:ignore="HardcodedText" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineTop"
+        android:id="@+id/menuGuidelineTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.47" />
+        app:layout_constraintGuide_percent="0.50" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineLeft"
+        android:id="@+id/menuGuidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/menuGuidelineLeft"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.05" />
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guidelineRight"
+        android:id="@+id/menuGuidelineRight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
